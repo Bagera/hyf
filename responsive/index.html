@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Responsive Example</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main>
+    <h1>Responsive Web Design - Examples</h1>
+    <section>
+      <h2>
+        <a href="step-1/index.html">Step 1 - The base</a>
+      </h2>
+      <p>This version is just a basic page without styles</p>
+      <p>It is here to show where we start</p>
+    </section>
+    <section>
+      <h2>
+        <a href="step-2/index.html">Step 2 - Mobile first</a>
+      </h2>
+      <p>Here we have applied styles. It now works on mobile but as you can see when the screen is wider it becomes hard to
+        read and the image gets very big</p>
+      <p>We use different unit types to achieve different goals</p>
+      <h3>Units</h3>
+      <p>
+        <code>em</code> depends on the
+        <code>font-size</code>.
+        <code>bottom: 1em;</code> on the
+        <code>h1</code> will change if we change the
+        <code>font-size</code> of the
+        <code>h1</code>.</p>
+      <p>
+        <code>vw</code> depends on the viewport width.
+        <code>font-size: 6vw;</code> on the
+        <code>h1</code> will change if we change the width of the window.</p>
+      <p>
+        <code>%</code> depends on the size of the parent.
+        <code>width: 100%;</code> on the
+        <code>img</code> will make it always be the full width of the header.</p>
+      <p>Other units include
+        <code>vh</code>,
+        <code>rem</code> and
+        <code>px</code>. You can read more at
+        <a href="https://css-tricks.com/the-lengths-of-css/">css-tricks</a> but don't take to much note of the cm, in and similar "real world" units.
+      </p>
+
+    </section>
+    <section>
+      <h2>
+        <a href="step-3/index.html">Step 3 - Maxing out</a>
+      </h2>
+      <p>The first thing we can do is to apply
+        <code>max-width: 600px;</code> to our
+        <code>main</code> and
+        <code>header</code>. Adding
+        <code>margin: 0 auto;</code> will center it for us and make it look better.
+      </p>
+      <p>This will make the page a bit more legible but we still have some problems</p>
+    </section>
+    <section>
+      <h2>
+        <a href="step-4/index.html">Step 4 - Media queries & floats</a>
+      </h2>
+      <p>The image was still a problem. It didn't look good. We can use
+        <code>media queries</code> to make stuff change depending on screen width and more</p>
+      <p>
+        We can use
+        <code>display: flex;</code> and
+        <code>flex-direction: column-reverse;</code> to do a little trick to change the order of elements.
+      </p>
+      <p>We use
+        <code>float: left;</code> to make the lists show side by side and we have to
+        <code>clear: both;</code> makes the contact info appear as we would like.</p>
+    </section>
+  </main>
+</body>
+
+</html>
